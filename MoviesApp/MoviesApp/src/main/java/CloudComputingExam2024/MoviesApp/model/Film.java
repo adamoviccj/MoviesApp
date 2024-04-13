@@ -10,7 +10,8 @@ import javax.persistence.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Movie {
+@Table(name = "films")
+public class Film {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -19,8 +20,8 @@ public class Movie {
     private String title;
     @Column(name = "genre", nullable = false)
     private String genre;
-    @Column(name ="release_year", nullable = false)
-    private Long releaseYear;
+    @Column(name ="year", nullable = false)
+    private Long year;
 
 
 }

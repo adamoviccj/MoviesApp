@@ -1,6 +1,6 @@
 -- Inserting example movies data into the MOVIES table
 
-INSERT INTO movie(title, genre, release_year) VALUES
+INSERT INTO films(title, genre, year) VALUES
                                                     ('The Shawshank Redemption', 'Drama', 1994),
                                                     ('The Godfather', 'Crime/Drama', 1972),
                                                     ('The Dark Knight', 'Action/Crime/Drama', 2008),
